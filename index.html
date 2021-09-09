@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<div id="attack-roll" class="roller">
+    <h3>Attack Roll</h3>
+    <form action="post">
+        <label for="diceNumber">Number of Dice</label>
+        <input id="diceNumber" type="text" name="diceNumber"> <br>
+        <label for="attackBonus">Attack Bonus</label>
+        <input id="attackBonus" type="text" name="attackBonus"> <br>
+        <label for="armorClass">Opposing Armour Class</label>
+        <input id="armorClass" type="text" name="armorClass">          
+    </form>
+    <button id="rollButton">Roll</button>
+    <p>Result:</p>
+    <p id="results">Roll to see results</p>
+    <div id="attackDice" class="dice">
+
+    </div>
+</div>
+
+<div id="damage-roll" class="roller">
+    <h3>Damage Roll</h3>
+    <form>
+        <label for="damageNumber">Number of Dice</label>
+        <input id="damageNumber" type="text" name="damageNumber"> <br>
+        <label for="damageType">Type of Dice</label>
+        <input id="damageType" type="text" name="damageType"> <br>
+        <label for="damageBonus">Damage Bonus</label>
+        <input id="damageBonus" type="text" name="damageBonus"> <br>
+    </form>
+    <p>Result:</p>
+    <p id="damageResults"></p>
+    <div id="damageDice" class="dice"></div>
+</div>
+
+</div> 
+    <script src="script.js"></script>
+</body>
+</html>

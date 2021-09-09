@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    width: 100%;  
+    justify-content: space-evenly;
+}
+
+.dice {
+    display: grid;
+    grid-template-columns: repeat(5, 5vh);
+    grid-gap: 1vh;
+    
+}
+
+.die {
+    height: 5vh;
+    border: 1px solid #333;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px #bbb;
+    
+}
+
+.die h3 {
+    color: #333;
+}
